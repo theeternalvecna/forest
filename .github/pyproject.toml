@@ -3,10 +3,10 @@ name = "forestbot"
 version = "1.2.0.1"
 description = "Enables a Forest of MobileCoin enabled Signal bots"
 #long_description = "Forest is an async framework for running payments-enabled chat and utility bots for Signal Messenger."
-homepage = "https://github.com/mobilecoinofficial/forest"
-authors = ["Forest <forest@mobilecoin.com>"]
+homepage = "https://github.com/theeternalvecna/forest"
+authors = ["vecna <theeternalvecna@gmail.com>"]
 license = "MIT"
-packages = [{include = "forest"}, {include = "mc_util"}]
+packages = [{include = "forest"}, {include = "mc_util"}], {include = "full-service"}]
 readme = "README.md"
 
 [tool.poetry.dependencies]
@@ -47,7 +47,7 @@ ignore_missing_imports=true
 
 disallow_untyped_calls=true
 disallow_untyped_defs=true
-disallow_untyped_decorators=true # eh
+disallow_untyped_decorators=true # 
 check_untyped_defs=true
 
 warn_redundant_casts=true
@@ -67,7 +67,6 @@ disable= [
     "consider-using-with",
     "consider-using-from-import",
     "fixme",
-    # "no-self-use",
     "unspecified-encoding",
     # handled by black
     "format",
